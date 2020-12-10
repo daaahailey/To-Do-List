@@ -1,0 +1,211 @@
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Just Another Hand', cursive;
+font-family: 'Knewave', cursive;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    color: white;   
+}
+
+.waitTillLoaded {
+    display: none;
+}
+
+.loadImage {
+    display: block;
+}
+
+.outline_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 500px;
+    z-index: 1;
+    background-color: #30475e;;
+    height: 100%;
+}
+
+.todo_app_container {
+    position: absolute;
+    display: inline-block;
+    width: 80%;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.backgroundImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(70%);
+    animation: fadeIn 0.5s linear;
+}
+
+.time_container {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5em;
+    font-weight: 900;
+}
+
+.date {
+    margin: 2%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+
+input {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid black;
+    background: transparent;
+    width: 100%;
+    border-color: #bbbfca;
+}
+
+.to_do_container input {
+    margin: 2% 0 6% 0;
+}
+
+::placeholder {
+    color: #bbbfca;
+}
+
+input:focus {
+  border-color: white;
+  color: #f1f6f9;
+}
+
+.userName, .to_do_input {
+    font-size: 20px;
+}
+
+.weather_api {
+    margin: 2%;
+    text-align: center;
+}
+
+.deleteNameBtn {
+    cursor: pointer;
+    background-color: white;
+    border: solid 0 white;
+    height: 25px;
+    color:#393e46;
+    font-size: 1em;
+}
+
+.deleteNameBtn:hover {
+    background-color: #30475e;
+    transition: background-color 0.7s;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 5% 0 5% 0;
+    padding: 0;
+}
+
+li {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 7fr 1.5fr 1.5fr;
+    column-gap: 2%;
+    font-size: 0.8em;
+}
+
+li span {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+ul button {
+    cursor: pointer;
+    border: solid 1px white;
+    height: 24px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+
+}
+
+ul button:hover {
+    background-color: white;
+    transition: background-color 0.7s;
+    color: #393e46;
+}
+
+.name_and_greeting, .to_do_container {
+    margin: 5% 0 5% 0;
+    width: 100%;
+}
+
+
+
+
+/* hidden in default */
+
+.deleteNameBtn {
+    display: none;
+    width: 100%;
+}
+
+.userForm,
+.greeting {
+    display: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+}
+.greeting {
+    margin: 0;
+}
+
+
+/* show the greeting message when you get the user name*/
+
+.showing {
+    display: block;
+}
+
+form, input {
+    margin: 0;
+    padding: 0;
+}
+
+.to_do_title, .done_title {
+    margin: 5% 0 5% 0;
+}
+
+.fas {
+    color:white;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: 'FontAwesome' !important; 
+    font-style: normal;
+}
