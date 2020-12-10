@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Just+Another+Hand&family=Knewave&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>My Momentum</title>
+</head>
+<body>
+    <div class="outline_container">
+        <div class="todo_app_container">
+        <!--Current time and date-->
+        <div class="time_container">
+            <h1 class="time">00:00:00</h1>
+            <h2 class="date"></h2>
+        </div>
+        <!--weather from API-->
+        <div class="weather_api">
+            <span class="js-weather"></span>
+        </div>  
+        <!--name & greeting-->
+        <div class="name_and_greeting">
+            <!--User name input-->
+            <form class="userForm" action="">
+                <input class="userName" type="text" placeholder="What is your name?">
+            </form>
+            <!--Greeting message-->
+            <div class = "greeting_container">
+                <h4 class="greeting"></h4>
+                <button class="deleteNameBtn">Delete</button>
+            </div>
+        </div>
+        <!--To Do list-->
+        <div class="to_do_container">
+            <form class="to_do_form" action="">
+                <input class="to_do_input" type="text" placeholder="Add what to do">
+            </form>
+            <div class="to_do_title">
+            <i class="fas fa-edit">  To Do</i>
+            </div>
+            <ul class="to_do_list">
+            </ul>
+            <div class="done_title">
+            <i class="fas fa-check-square"> Done</i>
+            </div>
+            <ul class="to_do_done">               
+            </ul>
+        </div>
+        </div>
+    </div>
+    <script src="time.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="background.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
